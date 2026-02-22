@@ -14,13 +14,7 @@ const app = express();
 
 app.use(helmet());
 app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://nonfacetious-jestine-unsneeringly.ngrok-free.dev",
-    ],
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 
